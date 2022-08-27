@@ -9,7 +9,8 @@
 
 <%--Your name: ${param.employeeName}--%>
 
-Your name:
+Your name: ${nameAttribute}
+
 </form>
 </body>
 </html>
