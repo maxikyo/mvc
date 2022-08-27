@@ -10,14 +10,11 @@
 
     <form:form action = "showDetails" modelAttribute="employee">
         Name <form:input path="name"/>
-        <br>
-        <br>
+        <br><br>
         Surname <form:input path="surname"/>
-        <br>
-        <br>
+        <br><br>
         Salary <form:input path="salary"/>
-        <br>
-        <br>
+        <br><br>
         <input type="submit" value="OK">
     </form:form>
 
