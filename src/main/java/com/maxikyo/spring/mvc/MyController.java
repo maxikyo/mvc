@@ -30,6 +30,8 @@ public class MyController {
         empName = "Mr. " + empName;
         model.addAttribute("nameAttribute", empName);
 
+        model.addAttribute("description", " - udemy instructor");
+
 
         return "show-emp-details-view";
     }
