@@ -24,6 +24,7 @@ Your car: ${employee.carBrand}
 <br>
 Language(s):
 <ul>
+<%--    Временная переменная --%>
     <c:forEach var="lang" items="${employee.languages}">
 
         <li>${lang}</li>

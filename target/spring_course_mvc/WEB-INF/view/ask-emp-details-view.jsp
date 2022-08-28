@@ -22,13 +22,19 @@
         <br><br>
         Which car do you want to have?
         <form:radiobuttons path="carBrand" items="${employee.carBrands}"/>
-
 <%--        &lt;%&ndash;Radio button (hard coded)&ndash;%&gt;--%>
 <%--        BMW <form:radiobutton path="carBrand" value="BMW"/>--%>
 <%--        Audi <form:radiobutton path="carBrand" value="Audi"/>--%>
 <%--        Mercedes<form:radiobutton path="carBrand" value="Mercedes"/>--%>
         <br><br>
 
+        <%--check box hard-coded--%>
+        Foreign Language(s)
+        EN <form:checkbox path="languages" value="English"/>
+        FR <form:checkbox path="languages" value="French"/>
+        DE <form:checkbox path="languages" value="Deuhtsch"/>
+
+        <br><br>
         <input type="submit" value="OK">
     </form:form>
 
