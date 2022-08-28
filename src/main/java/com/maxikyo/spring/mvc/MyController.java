@@ -36,7 +36,6 @@ public class MyController {
     public String showEmpDetails(@ModelAttribute("employee") Employee emp){
 
 
-
         return "show-emp-details-view";
     }
 
