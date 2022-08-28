@@ -14,6 +14,7 @@ public class Employee {
     private Map<String, String> departments;
 
     public Employee() {
+        //Здесь прописывается путь к хэш мапу, читаетсяы в ask
         departments = new HashMap<>();
         departments.put("IT", "Information Technology");
         departments.put("HR", "Human Technology");
