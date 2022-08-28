@@ -24,7 +24,11 @@ Your car: ${employee.carBrand}
 <br>
 Language(s):
 <ul>
-    <c:forEach var="lang"
+    <c:forEach var="lang" items="${employee.languages}">
+
+        <li>${lang}</li>
+
+    </c:forEach>
 </ul>
 
 
