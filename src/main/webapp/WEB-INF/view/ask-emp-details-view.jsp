@@ -30,9 +30,13 @@
 
         <%--check box hard-coded--%>
         Foreign Language(s)
-        EN <form:checkbox path="languages" value="English"/>
-        FR <form:checkbox path="languages" value="French"/>
-        DE <form:checkbox path="languages" value="Deuhtsch"/>
+        <%--Without hard-coded--%>
+        <form:checkboxes path="languages" items="${employee.languageList}"/>
+
+        <%--hard coded--%>
+<%--        EN <form:checkbox path="languages" value="English"/>--%>
+<%--        FR <form:checkbox path="languages" value="French"/>--%>
+<%--        DE <form:checkbox path="languages" value="Deuhtsch"/>--%>
 
         <br><br>
         <input type="submit" value="OK">

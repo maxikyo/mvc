@@ -15,18 +15,26 @@ public class Employee {
     private String carBrand;
     private Map<String, String> carBrands;
     private String[] languages;
+    private Map<String, String> languageList;
 
     public Employee() {
-        //Здесь прописывается путь к хэш мапу, читаетсяы в ask
+//        Задаем параметры(ключи), чтобы не писать hard-coded в views
+        //Здесь прописывается путь к хэш мапу, читается в ask
         departments = new HashMap<>();
         departments.put("IT", "Information Technology");
         departments.put("HR", "Human Technology");
         departments.put("Sales", "Sales");
 
+
         carBrands = new HashMap<>();
         carBrands.put("BMW", "BMW");
         carBrands.put("Audi", "Audi");
         carBrands.put("Mercedes", "MB");
+
+        languageList = new HashMap<>();
+        languageList.put("English","EN");
+        languageList.put("Deutsch","DE");
+        languageList.put("French","FR");
     }
 
     public String getName() {
@@ -91,6 +99,14 @@ public class Employee {
 
     public void setLanguages(String[] languages) {
         this.languages = languages;
+    }
+
+    public Map<String, String> getLanguageList() {
+        return languageList;
+    }
+
+    public void setLanguageList(Map<String, String> languageList) {
+        this.languageList = languageList;
     }
 
     @Override
