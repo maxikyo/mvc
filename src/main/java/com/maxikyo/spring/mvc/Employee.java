@@ -12,6 +12,7 @@ public class Employee {
 
     private String department;
     private Map<String, String> departments;
+    private String carBrand;
 
     public Employee() {
         //Здесь прописывается путь к хэш мапу, читаетсяы в ask
@@ -59,6 +60,14 @@ public class Employee {
 
     public void setDepartments(Map<String, String> departments) {
         this.departments = departments;
+    }
+
+    public String getCarBrand() {
+        return carBrand;
+    }
+
+    public void setCarBrand(String carBrand) {
+        this.carBrand = carBrand;
     }
 
     @Override
