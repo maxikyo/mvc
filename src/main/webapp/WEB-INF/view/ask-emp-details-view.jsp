@@ -19,9 +19,9 @@
         <form:option value="Information Technology" label="IT"/>
         <form:option value="Human Resorces" label="HR"/>
         <form:option value="Sales" label="Sales"/>
-        <br><br>
-    </form:select>
 
+    </form:select>
+        <br><br>
         <input type="submit" value="OK">
     </form:form>
 
