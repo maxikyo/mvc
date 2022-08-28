@@ -1,3 +1,5 @@
+<%--second view--%>
+
 <!doctype html>
 <html lang="en">
 
