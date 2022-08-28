@@ -32,7 +32,6 @@ public class MyController {
 
         return "ask-emp-details-view";
     }
-
     @RequestMapping("/showDetails")
     public String showEmpDetails(@ModelAttribute("employee") Employee emp){
 
