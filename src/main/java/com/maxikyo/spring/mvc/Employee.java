@@ -13,6 +13,7 @@ public class Employee {
     private String department;
     private Map<String, String> departments;
     private String carBrand;
+    private Map<String, String> carBrands;
 
     public Employee() {
         //Здесь прописывается путь к хэш мапу, читаетсяы в ask
@@ -20,6 +21,11 @@ public class Employee {
         departments.put("IT", "Information Technology");
         departments.put("HR", "Human Technology");
         departments.put("Sales", "Sales");
+
+        carBrands = new HashMap<>();
+        carBrands.put("BMW", "BMW");
+        carBrands.put("Audi", "Audi");
+        carBrands.put("Mercedes", "MB");
     }
 
     public String getName() {
@@ -68,6 +74,14 @@ public class Employee {
 
     public void setCarBrand(String carBrand) {
         this.carBrand = carBrand;
+    }
+
+    public Map<String, String> getCarBrands() {
+        return carBrands;
+    }
+
+    public void setCarBrands(Map<String, String> carBrands) {
+        this.carBrands = carBrands;
     }
 
     @Override
