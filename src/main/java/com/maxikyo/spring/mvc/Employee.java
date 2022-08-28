@@ -1,5 +1,6 @@
 package com.maxikyo.spring.mvc;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -11,7 +12,8 @@ public class Employee {
     @Size(min = 2, max = 15, message = "Name must be minimum 2 symbols")
     private String name;
 
-    @NotEmpty(message = "surname is required field")
+//    @NotEmpty(message = "surname is required field")
+    @NotBlank(message = "surname is required field")
     private String surname;
 
     private int salary;
