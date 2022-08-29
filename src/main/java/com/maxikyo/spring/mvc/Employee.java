@@ -27,7 +27,7 @@ public class Employee {
     private Map<String, String> languageList;
     @Pattern(regexp = "\\d{3}-\\d{3}-\\d{3}", message = "please use the pattern XXX-XXX-XXX")
     private String phoneNumber;
-    @CheckEmail
+    @CheckEmail(value = "abc.com", message = "abc.com!")
     private String email;
 
 
