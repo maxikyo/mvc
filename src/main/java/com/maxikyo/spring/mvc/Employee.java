@@ -23,7 +23,8 @@ public class Employee {
     private Map<String, String> carBrands;
     private String[] languages;
     private Map<String, String> languageList;
-    @Pattern(regexp = "\\d{3}-\\d{3}--\\d{3}", message = "please use pattern XXX-XXX-XXX")
+
+    @Pattern(regexp = "\\d{3}-\\d{3}-\\d{3}", message = "please use the pattern XXX-XXX-XXX")
     private String phoneNumber;
 
 

@@ -32,6 +32,8 @@ Language(s):
     </c:forEach>
 </ul>
 
+Phone number: ${employee.phoneNumber}
+
 
 </form>
 </body>

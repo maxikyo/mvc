@@ -35,6 +35,10 @@
         Foreign Language(s)
         <%--Without hard-coded--%>
         <form:checkboxes path="languages" items="${employee.languageList}"/>
+        <br><br>
+        Phone<form:input path="phoneNumber"/>
+        <form:errors path="phoneNumber"/>
+        <br><br>
 
         <%--hard coded--%>
 <%--        EN <form:checkbox path="languages" value="English"/>--%>
