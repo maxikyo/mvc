@@ -39,6 +39,9 @@
         Phone<form:input path="phoneNumber"/>
         <form:errors path="phoneNumber"/>
         <br><br>
+        Email<form:input path="email"/>
+        <form:errors path="email"/>
+        <br><br>
 
         <%--hard coded--%>
 <%--        EN <form:checkbox path="languages" value="English"/>--%>

@@ -34,6 +34,8 @@ Language(s):
 
 Phone number: ${employee.phoneNumber}
 
+Email: ${employee.email}
+
 
 </form>
 </body>
