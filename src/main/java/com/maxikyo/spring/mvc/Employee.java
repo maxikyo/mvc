@@ -1,5 +1,7 @@
 package com.maxikyo.spring.mvc;
 
+import com.maxikyo.spring.mvc.validation.CheckEmail;
+
 import javax.validation.constraints.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -25,6 +27,7 @@ public class Employee {
     private Map<String, String> languageList;
     @Pattern(regexp = "\\d{3}-\\d{3}-\\d{3}", message = "please use the pattern XXX-XXX-XXX")
     private String phoneNumber;
+    @CheckEmail
     private String email;
 
 

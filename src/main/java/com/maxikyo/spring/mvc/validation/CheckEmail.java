@@ -11,4 +11,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME) //-работает вплоть до выполнения кода
 @Constraint(validatedBy = CheckEmailValidator.class) //-этот класс обрабатывает анотацию
 public @interface CheckEmail {
+//создаем новый метод
+    public String value() default "xyz.com";
+    public String message() default "email must ends with xyz.com";
 }
