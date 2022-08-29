@@ -11,10 +11,10 @@ public class Employee {
 
 //    @NotEmpty(message = "surname is required field")
     @NotBlank(message = "surname is required field")
+
     private String surname;
     @Min(value = 500, message = "must be greater than 499")
     @Max(value = 1000, message = "must be less than 1001")
-
     private int salary;
 
     private String department;
@@ -23,6 +23,10 @@ public class Employee {
     private Map<String, String> carBrands;
     private String[] languages;
     private Map<String, String> languageList;
+    @Pattern(regexp = "\\d{3}-\\d{3}--\\d{3}", message = "please use pattern XXX-XXX-XXX")
+    private String phoneNumber;
+
+
 
     public Employee() {
 //        Задаем параметры(ключи), чтобы не писать hard-coded в views
@@ -114,6 +118,14 @@ public class Employee {
 
     public void setLanguageList(Map<String, String> languageList) {
         this.languageList = languageList;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     @Override
